@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy me a coffee</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     
+<h1>buy me a Coffee</h1>
     
+    <div id="walletStatus">
+        <p>Wallet not connected</p>
+    </div>
+    
+    <button id="connectBtn">Connect Wallet</button>
+    <button id="buyCoffeeBtn" disabled>Buy Coffee (0.01 ETH)</button>
+    <button id="getBalanceBtn" disabled>Get Balance</button>
+    <button id="withdrawBtn" disabled>Withdraw Balance</button>
+    
+    <div id="balanceDisplay"></div>
+    
+    <div id="status"></div>
+
 </body>
 </html>
